@@ -2,7 +2,12 @@ using UnityEngine;
 
 public class GameMaster : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    //[SerializeField] private bool[] buttonsToClick;
+
+    //[SerializeField] private int minLitButtons;
+    //[SerializeField] private int maxLitButtons;
+
     void Start()
     {
         
@@ -10,6 +15,11 @@ public class GameMaster : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        
+    }
+
+    void SetButtonsToClick()
     {
         
     }
