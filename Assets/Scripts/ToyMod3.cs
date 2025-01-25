@@ -161,6 +161,7 @@ public class ToyMod3 : MonoBehaviour
     {
         gameObject.transform.SetParent(GameObject.Find("Canvas").transform, false);
         anim.Play("toy_in");
+        gameObject.GetComponent<ToyDifficulty>().Mod3Progression();
         yield return new WaitForSeconds(1);
 
         ResetToy();
