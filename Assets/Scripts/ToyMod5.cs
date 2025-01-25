@@ -10,7 +10,7 @@ public class ToyMod5 : MonoBehaviour
 
     private Animator anim;
 
-    [SerializeField] private float currentTimerMax;
+    public float currentTimerMax;
     public float currentTimer;
     [SerializeField] private Image timerSprite;
     [SerializeField] private TextMeshProUGUI timerText;
@@ -27,8 +27,8 @@ public class ToyMod5 : MonoBehaviour
 
     public float blinkTime;
 
-    [SerializeField] private int minLitButtons;
-    [SerializeField] private int maxLitButtons;
+    public int minLitButtons;
+    public int maxLitButtons;
 
     private void Awake()
     {
