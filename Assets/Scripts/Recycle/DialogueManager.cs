@@ -38,7 +38,7 @@ public class DialogueManager : MonoBehaviour
     private void Update()
     {
 		anim.SetBool("Open", open);
-		if (Input.GetMouseButtonDown(0))
+		if (Input.GetKeyDown(KeyCode.Space))
 			{
 			skip = true;
 			if (canNext)

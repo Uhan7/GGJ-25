@@ -43,7 +43,7 @@ public class GameMaster : MonoBehaviour
 
     public void UIUpdate()
     {
-        scoreText.text = score.ToString();
+        scoreText.text = "Round " + score.ToString();
     }
 
     public void LoseGame()

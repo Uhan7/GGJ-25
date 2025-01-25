@@ -5,6 +5,9 @@ using TMPro;
 
 public class ToyMod4 : MonoBehaviour
 {
+    [SerializeField] private bool isIntro;
+    [SerializeField] private AudioClip scoreSFX;
+
     [HideInInspector] public GameObject gameManager;
     [HideInInspector] public GameMaster gameManagerScript;
 
@@ -16,7 +19,7 @@ public class ToyMod4 : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timerText;
 
     private bool started;
-    private bool compared;
+    public bool compared;
     private bool ended;
 
     [SerializeField] private TextMeshProUGUI resultText;
@@ -34,10 +37,12 @@ public class ToyMod4 : MonoBehaviour
 
     private void Awake()
     {
+        anim = GetComponent<Animator>();
+
+        if (isIntro) return;
+
         gameManager = GameObject.Find("Game Manager");
         gameManagerScript = gameManager.GetComponent<GameMaster>();
-
-        anim = GetComponent<Animator>();
     }
 
     private void Start()
@@ -139,7 +144,9 @@ public class ToyMod4 : MonoBehaviour
         gameObject.transform.SetParent(GameObject.Find("Canvas").transform, false);
         anim.Play("toy_in");
         //gameObject.GetComponent<ToyDifficulty>().Mod4Progression();
+        for (int i = 0; i < 10; i++) bubbles[i].GetComponent<Bubble>().clicked = true;
         yield return new WaitForSeconds(1);
+        for (int i = 0; i < 10; i++) bubbles[i].GetComponent<Bubble>().clicked = false;
 
         ResetToy();
         SetButtonsToClick();
@@ -157,6 +164,8 @@ public class ToyMod4 : MonoBehaviour
     {
         compared = true;
 
+        for (int i = 0; i < 10; i++) bubbles[i].GetComponent<Bubble>().clicked = true;
+
         currentTimer = 0;
 
         for (int i = 0; i < 10; i++)
@@ -170,6 +179,8 @@ public class ToyMod4 : MonoBehaviour
         }
         //resultText.text = "Coract!";
         gameManagerScript.score++;
+        GameObject.Find("SFX Source").GetComponent<AudioSource>().pitch = 1;
+        GameObject.Find("SFX Source").GetComponent<AudioSource>().PlayOneShot(scoreSFX);
         gameManagerScript.UIUpdate();
         return true;
     }

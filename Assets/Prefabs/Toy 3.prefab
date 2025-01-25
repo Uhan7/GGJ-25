@@ -738,6 +738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c434eb218cf8e2479eea404e395a3ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isIntro: 0
+  scoreSFX: {fileID: 8300000, guid: 4f2d2647f1f054892ace759a622e4b90, type: 3}
   gameManager: {fileID: 0}
   gameManagerScript: {fileID: 0}
   cBubbleButtons: 7800780078007800780078007800780078007800

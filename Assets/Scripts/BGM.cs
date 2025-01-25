@@ -7,6 +7,8 @@ public class BGM : MonoBehaviour
     private GameMaster gameManagerScript;
     private float normalVolume;
 
+    [SerializeField] private bool isIntro;
+
     [SerializeField] private AudioClip BGM2;
     [SerializeField] private AudioClip BGM3;
 
@@ -16,7 +18,7 @@ public class BGM : MonoBehaviour
     private void Awake()
     {
         aSource = GetComponent<AudioSource>();
-        gameManagerScript = GameObject.Find("Game Manager").GetComponent<GameMaster>();
+        if (!isIntro) gameManagerScript = GameObject.Find("Game Manager").GetComponent<GameMaster>();
     }
 
     void Start()
@@ -26,6 +28,8 @@ public class BGM : MonoBehaviour
 
     void Update()
     {
+        if (gameManagerScript == null) return;
+
         if (gameManagerScript.score >= 25 && !switchedToBGM2)
         {
             switchedToBGM2 = true;

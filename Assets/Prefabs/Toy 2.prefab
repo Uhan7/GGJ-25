@@ -528,6 +528,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132aa7d18c55947749553f15c74727e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isIntro: 0
+  scoreSFX: {fileID: 8300000, guid: 4f2d2647f1f054892ace759a622e4b90, type: 3}
   gameManager: {fileID: 0}
   gameManagerScript: {fileID: 0}
   currentTimerMax: 9

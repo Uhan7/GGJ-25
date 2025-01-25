@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class IntroManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private GameObject[] toyPrefabs;
+    private int toyNumber;
+
+    public GameObject[] dialogueCues;
+   
     void Start()
     {
         
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         
+    }
+
+    public void SpawnNewToy()
+    {
+        Instantiate(toyPrefabs[toyNumber]);
     }
 }

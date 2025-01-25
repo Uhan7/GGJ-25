@@ -11,6 +11,8 @@ public class Bubble : MonoBehaviour
 
     [SerializeField] private AudioClip[] popSFXs;
 
+    public bool clicked;
+
     private Toy toyScript;
     private ToyMod2 toyScript2;
     private ToyMod3 toyScript3;
@@ -51,6 +53,10 @@ public class Bubble : MonoBehaviour
 
     public void Clicked()
     {
+        if (clicked) return;
+
+        clicked = true;
+
         aSource.pitch = 1 + Random.Range(-0.3f, 0.3f);
         gameObject.GetComponent<Image>().sprite = clickedSprite;
         aSource.PlayOneShot(popSFXs[Random.Range(0, popSFXs.Length)]);
@@ -64,7 +70,7 @@ public class Bubble : MonoBehaviour
 
     public void Explode()
     {
-        if (toyScript4 != null && isBomb) toyScript4.Compare();
+        if (toyScript4 != null && isBomb && !toyScript4.compared) toyScript4.Compare();
     }
 
     public void setColor(char cColorID)

@@ -5,6 +5,9 @@ using TMPro;
 
 public class ToyMod5 : MonoBehaviour
 {
+    [SerializeField] private bool isIntro;
+
+    [SerializeField] private AudioClip scoreSFX;
     [HideInInspector] public GameObject gameManager;
     [HideInInspector] public GameMaster gameManagerScript;
 
@@ -32,15 +35,18 @@ public class ToyMod5 : MonoBehaviour
 
     private void Awake()
     {
+        anim = GetComponent<Animator>();
+
+        if (isIntro) return;
+
         gameManager = GameObject.Find("Game Manager");
         gameManagerScript = gameManager.GetComponent<GameMaster>();
-
-        anim = GetComponent<Animator>();
     }
 
     private void Start()
     {
-        currentTimerMax += 0.4f;
+        if (isIntro) return;
+        currentTimerMax += 0.65f;
         gameObject.GetComponent<ToyDifficulty>().Mod5Progression();
     }
 
@@ -124,7 +130,9 @@ public class ToyMod5 : MonoBehaviour
         gameObject.transform.SetParent(GameObject.Find("Canvas").transform, false);
         anim.Play("toy_in");
         gameObject.GetComponent<ToyDifficulty>().Mod5Progression();
+        for (int i = 0; i < 10; i++) bubbles[i].GetComponent<Bubble>().clicked = true;
         yield return new WaitForSeconds(1);
+        for (int i = 0; i < 10; i++) bubbles[i].GetComponent<Bubble>().clicked = false;
 
         ResetToy();
         SetButtonsToClick();
@@ -149,7 +157,11 @@ public class ToyMod5 : MonoBehaviour
 
     bool Compare()
     {
+        if (compared) return false;
+
         compared = true;
+
+        for (int i = 0; i < 10; i++) bubbles[i].GetComponent<Bubble>().clicked = true;
 
         currentTimer = 0;
 
@@ -164,6 +176,8 @@ public class ToyMod5 : MonoBehaviour
         }
         //resultText.text = "Coract!";
         gameManagerScript.score++;
+        GameObject.Find("SFX Source").GetComponent<AudioSource>().pitch = 1;
+        GameObject.Find("SFX Source").GetComponent<AudioSource>().PlayOneShot(scoreSFX);
         gameManagerScript.UIUpdate();
         return true;
     }
