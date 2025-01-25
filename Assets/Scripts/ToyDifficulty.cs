@@ -70,7 +70,7 @@ public class ToyDifficulty : MonoBehaviour
 
     public void Mod3Progression()
     {
-        if (toyScript != null && toyScript3.gameManagerScript.score >= 0 && toyScript3.gameManagerScript.score <= 10)
+        if (toyScript3 != null && toyScript3.gameManagerScript.score >= 0 && toyScript3.gameManagerScript.score <= 10)
         {
             toyScript3.currentTimerMax = 2.5f;
 
