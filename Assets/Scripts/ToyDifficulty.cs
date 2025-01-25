@@ -73,33 +73,27 @@ public class ToyDifficulty : MonoBehaviour
         if (toyScript != null && toyScript3.gameManagerScript.score >= 0 && toyScript3.gameManagerScript.score <= 10)
         {
             toyScript3.currentTimerMax = 2.5f;
-            toyScript3.nMaxColor = 2;
 
         }
         if (toyScript3 != null && toyScript3.gameManagerScript.score >= 11 && toyScript3.gameManagerScript.score <= 20)
         {
             toyScript3.currentTimerMax = 2.25f;
-            toyScript3.nMaxColor = 3;
         }
         if (toyScript3 != null && toyScript3.gameManagerScript.score >= 21 && toyScript3.gameManagerScript.score <= 30)
         {
             toyScript3.currentTimerMax = 2f;
-            toyScript3.nMaxColor = 4;
         }
         if (toyScript3 != null && toyScript3.gameManagerScript.score >= 31 && toyScript3.gameManagerScript.score <= 40)
         {
             toyScript3.currentTimerMax = 1.75f;
-            toyScript3.nMaxColor = 5;
         }
         if (toyScript3 != null && toyScript3.gameManagerScript.score >= 41 && toyScript3.gameManagerScript.score <= 49)
         {
             toyScript3.currentTimerMax = 1.5f;
-            toyScript3.nMaxColor = 6;
         }
         if (toyScript3 != null && toyScript3.gameManagerScript.score >= 50)
         {
             toyScript3.currentTimerMax = 1.2f;
-            toyScript3.nMaxColor = 6;
         }
     }
 
@@ -190,8 +184,8 @@ public class ToyDifficulty : MonoBehaviour
             toyScript4.minLitButtons = 2;
             toyScript4.maxLitButtons = 4;
 
-            toyScript4.minBlockedButtons = 1;
-            toyScript4.maxBlockedButtons = 2;
+            toyScript4.minBlockedButtons = 2;
+            toyScript4.maxBlockedButtons = 3;
 
         }
         if (toyScript4 != null && toyScript4.gameManagerScript.score >= 11 && toyScript4.gameManagerScript.score <= 20)
@@ -200,8 +194,8 @@ public class ToyDifficulty : MonoBehaviour
             toyScript4.minLitButtons = 2;
             toyScript4.maxLitButtons = 4;
 
-            toyScript4.minBlockedButtons = 1;
-            toyScript4.maxBlockedButtons = 2;
+            toyScript4.minBlockedButtons = 2;
+            toyScript4.maxBlockedButtons = 3;
 
         }
         if (toyScript4 != null && toyScript4.gameManagerScript.score >= 21 && toyScript4.gameManagerScript.score <= 30)
@@ -210,8 +204,8 @@ public class ToyDifficulty : MonoBehaviour
             toyScript4.minLitButtons = 3;
             toyScript4.maxLitButtons = 5;
 
-            toyScript4.minBlockedButtons = 1;
-            toyScript4.maxBlockedButtons = 3;
+            toyScript4.minBlockedButtons = 2;
+            toyScript4.maxBlockedButtons = 4;
         }
         if (toyScript4 != null && toyScript4.gameManagerScript.score >= 31 && toyScript4.gameManagerScript.score <= 40)
         {
@@ -219,8 +213,8 @@ public class ToyDifficulty : MonoBehaviour
             toyScript4.minLitButtons = 3;
             toyScript4.maxLitButtons = 6;
 
-            toyScript4.minBlockedButtons = 2;
-            toyScript4.maxBlockedButtons = 3;
+            toyScript4.minBlockedButtons = 3;
+            toyScript4.maxBlockedButtons = 4;
         }
         if (toyScript4 != null && toyScript4.gameManagerScript.score >= 41 && toyScript4.gameManagerScript.score <= 49)
         {
@@ -228,8 +222,8 @@ public class ToyDifficulty : MonoBehaviour
             toyScript4.minLitButtons = 4;
             toyScript4.maxLitButtons = 6;
 
-            toyScript4.minBlockedButtons = 2;
-            toyScript4.maxBlockedButtons = 4;
+            toyScript4.minBlockedButtons = 3;
+            toyScript4.maxBlockedButtons = 5;
         }
         if (toyScript4 != null && toyScript4.gameManagerScript.score >= 50)
         {
@@ -237,8 +231,8 @@ public class ToyDifficulty : MonoBehaviour
             toyScript4.minLitButtons = 4;
             toyScript4.maxLitButtons = 6;
 
-            toyScript4.minBlockedButtons = 2;
-            toyScript4.maxBlockedButtons = 4;
+            toyScript4.minBlockedButtons = 3;
+            toyScript4.maxBlockedButtons = 5;
         }
     }
 

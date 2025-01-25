@@ -124,7 +124,7 @@ public class ToyMod3 : MonoBehaviour
         Debug.Log(cColorTarget);
         for (int nBubButton = 0; nBubButton < 10; nBubButton++)
         {
-            nRandomNum = Random.Range(0, nMaxColor+1);
+            nRandomNum = Random.Range(0, 5+1);
             found = false;
 
             while (found == false)

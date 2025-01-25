@@ -102,11 +102,12 @@ public class ToyMod4 : MonoBehaviour
     void SetButtonsToClick()
     {
         int nBlockedNum = Random.Range(minBlockedButtons, maxBlockedButtons + 1);
+        int nRandomNumber = Random.Range(1,5);
         for (int nBlocked = 0; nBlocked < nBlockedNum; nBlocked++)
         {
-            blockedButtons[(nBlocked * 3) % 10] = true;
-            Debug.Log((nBlocked * 3) % 10);
-            bubbles[(nBlocked * 3) % 10].GetComponent<Bubble>().isBomb = true;
+            blockedButtons[(nBlocked + nRandomNumber) % 10] = true;
+            Debug.Log((nBlocked + nRandomNumber) % 10);
+            bubbles[(nBlocked + nRandomNumber) % 10].GetComponent<Bubble>().isBomb = true;
         }
 
         int litNum = Random.Range(minLitButtons, maxLitButtons + 1);
