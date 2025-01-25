@@ -90,6 +90,16 @@ public class ToyMod3 : MonoBehaviour
 
     void ResetToy()
     {
+
+        char[] cColorID = { 'r', 'o', 'y', 'g', 'b', 'p' };
+        int[] nColorHash = { 0, 0, 0, 0, 0, 0 };
+        char[] cBubbleButtons = { 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x' };	// color value of bubble buttons
+        int nRandomNum = -1; // random number
+        int nChecker = -1; //Checks the value of the nBubble Button
+        int nTolerance = 1; // Checks if the number of collisions on the hash index is acceptable or can be hashed onto.
+        char cColorTarget = '?'; //Color that the player should clickity
+        bool found = false;
+        
         started = true;
         compared = false;
         ended = false;

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class Bubble : MonoBehaviour
 {
     [SerializeField] private AudioSource aSource;
-
+    public Sprite bubble;
     private int ID;
     [SerializeField] private GameObject toy;
     [SerializeField] private int toyMod;
