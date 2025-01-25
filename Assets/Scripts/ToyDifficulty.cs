@@ -5,7 +5,7 @@ public class ToyDifficulty : MonoBehaviour
     private Toy toyScript;
     private ToyMod2 toyScript2;
     private ToyMod3 toyScript3;
-    //private ToyMod4 toyScript4;
+    private ToyMod4 toyScript4;
     private ToyMod5 toyScript5;
 
     private void Awake()
@@ -13,7 +13,7 @@ public class ToyDifficulty : MonoBehaviour
         toyScript = GetComponent<Toy>();
         toyScript2 = GetComponent<ToyMod2>();
         toyScript3 = GetComponent<ToyMod3>();
-        //toyScript4 = GetComponent<ToyMod4>();
+        toyScript4 = GetComponent<ToyMod4>();
         toyScript5 = GetComponent<ToyMod5>();
     }
 
@@ -181,6 +181,65 @@ public class ToyDifficulty : MonoBehaviour
             toyScript5.maxLitButtons = 6;
         }
     }
-    
+
+    public void Mod4Progression()
+    {
+        if (toyScript4 != null && toyScript4.gameManagerScript.score >= 0 && toyScript4.gameManagerScript.score <= 10)
+        {
+            toyScript4.currentTimerMax = 2.5f;
+            toyScript4.minLitButtons = 2;
+            toyScript4.maxLitButtons = 4;
+
+            toyScript4.minBlockedButtons = 1;
+            toyScript4.maxBlockedButtons = 2;
+
+        }
+        if (toyScript4 != null && toyScript4.gameManagerScript.score >= 11 && toyScript4.gameManagerScript.score <= 20)
+        {
+            toyScript4.currentTimerMax = 2.5f;
+            toyScript4.minLitButtons = 2;
+            toyScript4.maxLitButtons = 4;
+
+            toyScript4.minBlockedButtons = 1;
+            toyScript4.maxBlockedButtons = 2;
+
+        }
+        if (toyScript4 != null && toyScript4.gameManagerScript.score >= 21 && toyScript4.gameManagerScript.score <= 30)
+        {
+            toyScript4.currentTimerMax = 2f;
+            toyScript4.minLitButtons = 3;
+            toyScript4.maxLitButtons = 5;
+
+            toyScript4.minBlockedButtons = 1;
+            toyScript4.maxBlockedButtons = 3;
+        }
+        if (toyScript4 != null && toyScript4.gameManagerScript.score >= 31 && toyScript4.gameManagerScript.score <= 40)
+        {
+            toyScript4.currentTimerMax = 1.75f;
+            toyScript4.minLitButtons = 3;
+            toyScript4.maxLitButtons = 6;
+
+            toyScript4.minBlockedButtons = 2;
+            toyScript4.maxBlockedButtons = 3;
+        }
+        if (toyScript4 != null && toyScript4.gameManagerScript.score >= 41 && toyScript4.gameManagerScript.score <= 49)
+        {
+            toyScript4.currentTimerMax = 1.5f;
+            toyScript4.minLitButtons = 4;
+            toyScript4.maxLitButtons = 6;
+
+            toyScript4.minBlockedButtons = 2;
+            toyScript4.maxBlockedButtons = 4;
+        }
+        if (toyScript4 != null && toyScript4.gameManagerScript.score >= 50)
+        {
+            toyScript4.currentTimerMax = 1.2f;
+            toyScript4.minLitButtons = 4;
+            toyScript4.maxLitButtons = 6;
+
+            toyScript4.minBlockedButtons = 2;
+            toyScript4.maxBlockedButtons = 4;
+        }
+    }
 
 }

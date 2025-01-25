@@ -21,6 +21,9 @@ public class Bubble : MonoBehaviour
     public Sprite litSprite;
     public Sprite clickedSprite;
 
+    public bool isBomb;
+    public Sprite bombSprite;
+
     private void Awake()
     {
         toyScript = toy.GetComponent<Toy>();
@@ -39,7 +42,7 @@ public class Bubble : MonoBehaviour
 
     void Update()
     {
-        
+        if (isBomb) GetComponent<Image>().sprite = bombSprite;
     }
 
     public void Clicked()
@@ -53,5 +56,10 @@ public class Bubble : MonoBehaviour
         if (toyScript3 != null) toyScript3.buttonsClicked[ID] = true;
         if (toyScript4 != null) toyScript4.buttonsClicked[ID] = true;
         if (toyScript5 != null) toyScript5.buttonsClicked[ID] = true;
+    }
+
+    public void Explode()
+    {
+        if (toyScript4 != null && isBomb) toyScript4.Compare();
     }
 }

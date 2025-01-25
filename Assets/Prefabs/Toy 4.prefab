@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 4
   popSFXs:
@@ -100,6 +101,8 @@ MonoBehaviour:
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: -5381781119884701127, guid: f2639c65b39204350867d3ea5758ea2f, type: 3}
 --- !u!114 &135869548357551461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +123,22 @@ MonoBehaviour:
         - m_Target: {fileID: 439264304265932740}
           m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
           m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 439264304265932740}
+          m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
+          m_MethodName: Explode
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -294,6 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 4
   popSFXs:
@@ -304,6 +324,8 @@ MonoBehaviour:
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: -5381781119884701127, guid: f2639c65b39204350867d3ea5758ea2f, type: 3}
 --- !u!114 &9178956479825348003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +346,22 @@ MonoBehaviour:
         - m_Target: {fileID: 6235722374093190337}
           m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
           m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6235722374093190337}
+          m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
+          m_MethodName: Explode
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -559,6 +597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 4
   popSFXs:
@@ -569,6 +608,8 @@ MonoBehaviour:
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: -5381781119884701127, guid: f2639c65b39204350867d3ea5758ea2f, type: 3}
 --- !u!114 &4083632767359143095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,6 +630,22 @@ MonoBehaviour:
         - m_Target: {fileID: 2358264117108660264}
           m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
           m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2358264117108660264}
+          m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
+          m_MethodName: Explode
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -849,6 +906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 4
   popSFXs:
@@ -859,6 +917,8 @@ MonoBehaviour:
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: -5381781119884701127, guid: f2639c65b39204350867d3ea5758ea2f, type: 3}
 --- !u!114 &1374438070639107518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -879,6 +939,22 @@ MonoBehaviour:
         - m_Target: {fileID: 1011080790184649150}
           m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
           m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1011080790184649150}
+          m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
+          m_MethodName: Explode
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -978,6 +1054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 4
   popSFXs:
@@ -988,6 +1065,8 @@ MonoBehaviour:
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: -5381781119884701127, guid: f2639c65b39204350867d3ea5758ea2f, type: 3}
 --- !u!114 &1950135781918409930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1008,6 +1087,22 @@ MonoBehaviour:
         - m_Target: {fileID: 7514216412896279590}
           m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
           m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7514216412896279590}
+          m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
+          m_MethodName: Explode
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1107,6 +1202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 4
   popSFXs:
@@ -1117,6 +1213,8 @@ MonoBehaviour:
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: -5381781119884701127, guid: f2639c65b39204350867d3ea5758ea2f, type: 3}
 --- !u!114 &3700429009488459397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1137,6 +1235,22 @@ MonoBehaviour:
         - m_Target: {fileID: 918403207300250471}
           m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
           m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 918403207300250471}
+          m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
+          m_MethodName: Explode
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1236,6 +1350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 4
   popSFXs:
@@ -1246,6 +1361,8 @@ MonoBehaviour:
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: -5381781119884701127, guid: f2639c65b39204350867d3ea5758ea2f, type: 3}
 --- !u!114 &3048464509611458741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1266,6 +1383,22 @@ MonoBehaviour:
         - m_Target: {fileID: 742247119698466222}
           m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
           m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 742247119698466222}
+          m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
+          m_MethodName: Explode
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1365,6 +1498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 4
   popSFXs:
@@ -1375,6 +1509,8 @@ MonoBehaviour:
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: -5381781119884701127, guid: f2639c65b39204350867d3ea5758ea2f, type: 3}
 --- !u!114 &4202966269439171840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1395,6 +1531,22 @@ MonoBehaviour:
         - m_Target: {fileID: 5931903301738196429}
           m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
           m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5931903301738196429}
+          m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
+          m_MethodName: Explode
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1494,6 +1646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 4
   popSFXs:
@@ -1504,6 +1657,8 @@ MonoBehaviour:
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: -5381781119884701127, guid: f2639c65b39204350867d3ea5758ea2f, type: 3}
 --- !u!114 &135122229184336010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1524,6 +1679,22 @@ MonoBehaviour:
         - m_Target: {fileID: 3375912695352813744}
           m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
           m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3375912695352813744}
+          m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
+          m_MethodName: Explode
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1623,6 +1794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 4
   popSFXs:
@@ -1633,6 +1805,8 @@ MonoBehaviour:
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: -5381781119884701127, guid: f2639c65b39204350867d3ea5758ea2f, type: 3}
 --- !u!114 &4587995468515310177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1653,6 +1827,22 @@ MonoBehaviour:
         - m_Target: {fileID: 4674389132231282841}
           m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
           m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4674389132231282841}
+          m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
+          m_MethodName: Explode
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

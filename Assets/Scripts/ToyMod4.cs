@@ -106,6 +106,7 @@ public class ToyMod4 : MonoBehaviour
         {
             blockedButtons[(nBlocked * 3) % 10] = true;
             Debug.Log((nBlocked * 3) % 10);
+            bubbles[(nBlocked * 3) % 10].GetComponent<Bubble>().isBomb = true;
         }
 
         int litNum = Random.Range(minLitButtons, maxLitButtons + 1);
@@ -152,7 +153,7 @@ public class ToyMod4 : MonoBehaviour
         Destroy(gameObject);
     }
 
-    bool Compare()
+    public bool Compare()
     {
         compared = true;
 
