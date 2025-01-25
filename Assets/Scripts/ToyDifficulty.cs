@@ -62,4 +62,85 @@ public class ToyDifficulty : MonoBehaviour
             toyScript3.nMaxColor = 6;
         }
     }
+
+    public void Mod2Progression()
+    {
+        if (toyScript2 != null && toyScript2.gameManagerScript.score >= 0 && toyScript2.gameManagerScript.score <= 10)
+        {
+            toyScript2.currentTimerMax = 2.5f;
+            toyScript2.minLitButtons = 2;
+            toyScript2.maxLitButtons = 4;
+        }
+        if (toyScript2 != null && toyScript2.gameManagerScript.score >= 11 && toyScript2.gameManagerScript.score <= 20)
+        {
+            toyScript2.currentTimerMax = 2.25f;
+            toyScript2.minLitButtons = 2;
+            toyScript2.maxLitButtons = 5;
+        }
+        if (toyScript2 != null && toyScript2.gameManagerScript.score >= 21 && toyScript2.gameManagerScript.score <= 30)
+        {
+            toyScript2.currentTimerMax = 2f;
+            toyScript2.minLitButtons = 3;
+            toyScript2.maxLitButtons = 5;
+        }
+        if (toyScript2 != null && toyScript2.gameManagerScript.score >= 31 && toyScript2.gameManagerScript.score <= 40)
+        {
+            toyScript2.currentTimerMax = 1.75f;
+            toyScript2.minLitButtons = 3;
+            toyScript2.maxLitButtons = 6;
+        }
+        if (toyScript2 != null && toyScript2.gameManagerScript.score >= 41 && toyScript2.gameManagerScript.score <= 49)
+        {
+            toyScript2.currentTimerMax = 1.5f;
+            toyScript2.minLitButtons = 4;
+            toyScript2.maxLitButtons = 6;
+        }
+        if (toyScript2 != null && toyScript2.gameManagerScript.score >= 50)
+        {
+            toyScript2.currentTimerMax = 1.2f;
+            toyScript2.minLitButtons = 4;
+            toyScript2.maxLitButtons = 6;
+        }
+    }
+    public void Mod5Progression()
+    {
+        if (toyScript5 != null && toyScript5.gameManagerScript.score >= 0 && toyScript5.gameManagerScript.score <= 10)
+        {
+            toyScript5.currentTimerMax = 2.5f;
+            toyScript5.minLitButtons = 2;
+            toyScript5.maxLitButtons = 4;
+        }
+        if (toyScript5 != null && toyScript5.gameManagerScript.score >= 11 && toyScript5.gameManagerScript.score <= 20)
+        {
+            toyScript5.currentTimerMax = 2.25f;
+            toyScript5.minLitButtons = 2;
+            toyScript5.maxLitButtons = 5;
+        }
+        if (toyScript5 != null && toyScript5.gameManagerScript.score >= 21 && toyScript5.gameManagerScript.score <= 30)
+        {
+            toyScript5.currentTimerMax = 2f;
+            toyScript5.minLitButtons = 3;
+            toyScript5.maxLitButtons = 5;
+        }
+        if (toyScript5 != null && toyScript5.gameManagerScript.score >= 31 && toyScript5.gameManagerScript.score <= 40)
+        {
+            toyScript5.currentTimerMax = 1.75f;
+            toyScript5.minLitButtons = 3;
+            toyScript5.maxLitButtons = 6;
+        }
+        if (toyScript5 != null && toyScript5.gameManagerScript.score >= 41 && toyScript5.gameManagerScript.score <= 49)
+        {
+            toyScript5.currentTimerMax = 1.5f;
+            toyScript5.minLitButtons = 4;
+            toyScript5.maxLitButtons = 6;
+        }
+        if (toyScript5 != null && toyScript5.gameManagerScript.score >= 50)
+        {
+            toyScript5.currentTimerMax = 1.2f;
+            toyScript5.minLitButtons = 4;
+            toyScript5.maxLitButtons = 6;
+        }
+    }
+    
+
 }
