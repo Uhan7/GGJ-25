@@ -91,7 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
   toy: {fileID: 3653978652972919029}
-  toyMod: 5
+  toyMod: 4
   popSFXs:
   - {fileID: 8300000, guid: 5b8305aa6e07b4ea1a795d3443938b09, type: 3}
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
   toy: {fileID: 3653978652972919029}
-  toyMod: 5
+  toyMod: 4
   popSFXs:
   - {fileID: 8300000, guid: 5b8305aa6e07b4ea1a795d3443938b09, type: 3}
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
   toy: {fileID: 3653978652972919029}
-  toyMod: 5
+  toyMod: 4
   popSFXs:
   - {fileID: 8300000, guid: 5b8305aa6e07b4ea1a795d3443938b09, type: 3}
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
@@ -610,9 +610,8 @@ GameObject:
   - component: {fileID: 3907122869451180100}
   - component: {fileID: 9060987203069791766}
   - component: {fileID: 5764745184742882335}
-  - component: {fileID: 3544847476988932286}
   m_Layer: 0
-  m_Name: Toy 5
+  m_Name: Toy 4
   m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -670,7 +669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.56077003, b: 0.0047169924, a: 1}
+  m_Color: {r: 0.017205596, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -709,41 +708,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3544847476988932286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3653978652972919029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385add392f3e3489eae49e5b490cda08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
-  gameManagerScript: {fileID: 0}
-  currentTimerMax: 9
-  currentTimer: 9
-  timerSprite: {fileID: 7314482903008222030}
-  timerText: {fileID: 0}
-  resultText: {fileID: 2193652537464472960}
-  bubbles:
-  - {fileID: 6393670721260794330}
-  - {fileID: 574188256154130297}
-  - {fileID: 6860085325636447706}
-  - {fileID: 38582631177319784}
-  - {fileID: 2835950256794755867}
-  - {fileID: 6501221495912687478}
-  - {fileID: 7624037977952138936}
-  - {fileID: 8378209097393696536}
-  - {fileID: 3836488323879845035}
-  - {fileID: 7554165001912870206}
-  buttonsToClick: 00000000000000000000
-  buttonsClicked: 00000000000000000000
-  blinkTime: 0.1
-  minLitButtons: 7
-  maxLitButtons: 9
 --- !u!1 &3836488323879845035
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,7 +799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
   toy: {fileID: 3653978652972919029}
-  toyMod: 5
+  toyMod: 4
   popSFXs:
   - {fileID: 8300000, guid: 5b8305aa6e07b4ea1a795d3443938b09, type: 3}
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
@@ -964,7 +928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
   toy: {fileID: 3653978652972919029}
-  toyMod: 5
+  toyMod: 4
   popSFXs:
   - {fileID: 8300000, guid: 5b8305aa6e07b4ea1a795d3443938b09, type: 3}
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
@@ -1093,7 +1057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
   toy: {fileID: 3653978652972919029}
-  toyMod: 5
+  toyMod: 4
   popSFXs:
   - {fileID: 8300000, guid: 5b8305aa6e07b4ea1a795d3443938b09, type: 3}
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
@@ -1222,7 +1186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
   toy: {fileID: 3653978652972919029}
-  toyMod: 5
+  toyMod: 4
   popSFXs:
   - {fileID: 8300000, guid: 5b8305aa6e07b4ea1a795d3443938b09, type: 3}
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
@@ -1351,7 +1315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
   toy: {fileID: 3653978652972919029}
-  toyMod: 5
+  toyMod: 4
   popSFXs:
   - {fileID: 8300000, guid: 5b8305aa6e07b4ea1a795d3443938b09, type: 3}
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
@@ -1480,7 +1444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
   toy: {fileID: 3653978652972919029}
-  toyMod: 5
+  toyMod: 4
   popSFXs:
   - {fileID: 8300000, guid: 5b8305aa6e07b4ea1a795d3443938b09, type: 3}
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
@@ -1609,7 +1573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
   toy: {fileID: 3653978652972919029}
-  toyMod: 5
+  toyMod: 4
   popSFXs:
   - {fileID: 8300000, guid: 5b8305aa6e07b4ea1a795d3443938b09, type: 3}
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
