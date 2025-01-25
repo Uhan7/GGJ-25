@@ -10,6 +10,10 @@ public class Bubble : MonoBehaviour
     [SerializeField] private int toyMod;
 
     [SerializeField] private AudioClip[] popSFXs;
+    [SerializeField] public int r;
+    [SerializeField] public int g;
+    [SerializeField] public int b;
+
 
     private Toy toyScript;
     private ToyMod2 toyScript2;
