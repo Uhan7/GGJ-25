@@ -10,15 +10,11 @@ public class Bubble : MonoBehaviour
     [SerializeField] private int toyMod;
 
     [SerializeField] private AudioClip[] popSFXs;
-    [SerializeField] public int r;
-    [SerializeField] public int g;
-    [SerializeField] public int b;
-
 
     private Toy toyScript;
     private ToyMod2 toyScript2;
     private ToyMod3 toyScript3;
-    //private ToyMod4 toyScript4;
+    private ToyMod4 toyScript4;
     private ToyMod5 toyScript5;
 
     public Sprite normalSprite;
@@ -30,7 +26,7 @@ public class Bubble : MonoBehaviour
         toyScript = toy.GetComponent<Toy>();
         toyScript2 = toy.GetComponent<ToyMod2>();
         toyScript3 = toy.GetComponent<ToyMod3>();
-        //toyScript4 = toy.GetComponent<ToyMod4>();
+        toyScript4 = toy.GetComponent<ToyMod4>();
         toyScript5 = toy.GetComponent<ToyMod5>();
 
         aSource = GameObject.Find("SFX Source").GetComponent<AudioSource>();
@@ -55,7 +51,7 @@ public class Bubble : MonoBehaviour
         if (toyScript != null) toyScript.buttonsClicked[ID] = true;
         if (toyScript2 != null) toyScript2.buttonsClicked[ID] = true;
         if (toyScript3 != null) toyScript3.buttonsClicked[ID] = true;
-        //if (toyScript4 != null) toyScript4.buttonsClicked[ID] = true;
+        if (toyScript4 != null) toyScript4.buttonsClicked[ID] = true;
         if (toyScript5 != null) toyScript5.buttonsClicked[ID] = true;
     }
 }

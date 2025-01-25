@@ -105,6 +105,7 @@ public class ToyMod4 : MonoBehaviour
         for (int nBlocked = 0; nBlocked < nBlockedNum; nBlocked++)
         {
             blockedButtons[(nBlocked * 3) % 10] = true;
+            Debug.Log((nBlocked * 3) % 10);
         }
 
         int litNum = Random.Range(minLitButtons, maxLitButtons + 1);
