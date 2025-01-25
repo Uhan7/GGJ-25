@@ -134,7 +134,6 @@ public class ToyMod3 : MonoBehaviour
 
         for (int i = 0; i < 10; i++)
         {
-            Debug.Log(cBubbleButtons[i] == cColorTarget);
             if (cBubbleButtons[i] == cColorTarget)
             {
                 buttonsToClick[i] = true;

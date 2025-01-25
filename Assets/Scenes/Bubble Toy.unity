@@ -984,6 +984,7 @@ MonoBehaviour:
   toyPrefabs:
   - {fileID: 3653978652972919029, guid: 3f72b60257ac4422b8cdccdc96610f3f, type: 3}
   - {fileID: 3653978652972919029, guid: 09d5ea54a22404b5393f8e93ba826538, type: 3}
+  - {fileID: 3653978652972919029, guid: e974eb585697697499ed37d86d10812f, type: 3}
   - {fileID: 3653978652972919029, guid: 92367fdbf7c6c486d842e191f8ac6f38, type: 3}
   gameLost: 0
   loseScreen: {fileID: 443680937}
