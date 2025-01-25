@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BUBBLE BUTTON - PRESSED_0: 323322150360010957
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -103,7 +103,7 @@ public class ToyMod3 : MonoBehaviour
         started = true;
         compared = false;
         ended = false;
-        resultText.text = "";
+        //resultText.text = "";
         currentTimer = currentTimerMax;
 
         for (int i = 0; i < 10; i++)
@@ -196,12 +196,12 @@ public class ToyMod3 : MonoBehaviour
         {
             if (buttonsToClick[i] != buttonsClicked[i])
             {
-                resultText.text = "Wrong!";
+                //resultText.text = "Wrong!";
                 gameManagerScript.LoseGame();
                 return false;
             }
         }
-        resultText.text = "Coract!";
+        //resultText.text = "Coract!";
         gameManagerScript.score++;
         gameManagerScript.UIUpdate();
         return true;
