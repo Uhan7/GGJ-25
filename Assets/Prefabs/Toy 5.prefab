@@ -721,6 +721,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385add392f3e3489eae49e5b490cda08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  gameManagerScript: {fileID: 0}
   currentTimerMax: 9
   currentTimer: 9
   timerSprite: {fileID: 7314482903008222030}
@@ -739,6 +741,7 @@ MonoBehaviour:
   - {fileID: 7554165001912870206}
   buttonsToClick: 00000000000000000000
   buttonsClicked: 00000000000000000000
+  blinkTime: 0.1
   minLitButtons: 7
   maxLitButtons: 9
 --- !u!1 &3836488323879845035

@@ -5,8 +5,8 @@ using TMPro;
 
 public class ToyMod2 : MonoBehaviour
 {
-    private GameObject gameManager;
-    private GameMaster gameManagerScript;
+    [HideInInspector] public GameObject gameManager;
+    [HideInInspector] public GameMaster gameManagerScript;
 
     private Animator anim;
 

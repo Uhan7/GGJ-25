@@ -5,12 +5,12 @@ using TMPro;
 
 public class Toy : MonoBehaviour
 {
-    private GameObject gameManager;
-    private GameMaster gameManagerScript;
+    [HideInInspector] public GameObject gameManager;
+    [HideInInspector] public GameMaster gameManagerScript;
 
     private Animator anim;
 
-    [SerializeField] private float currentTimerMax;
+    public float currentTimerMax;
     public float currentTimer;
     [SerializeField] private Image timerSprite;
     [SerializeField] private TextMeshProUGUI timerText;
@@ -25,8 +25,8 @@ public class Toy : MonoBehaviour
     [SerializeField] private bool[] buttonsToClick;
     public bool[] buttonsClicked;
 
-    [SerializeField] private int minLitButtons;
-    [SerializeField] private int maxLitButtons;
+    public int minLitButtons;
+    public int maxLitButtons;
 
     private void Awake()
     {
@@ -38,7 +38,7 @@ public class Toy : MonoBehaviour
 
     private void Start()
     {
-
+        
     }
 
     private void OnEnable()
@@ -128,6 +128,7 @@ public class Toy : MonoBehaviour
     {
         gameObject.transform.SetParent(GameObject.Find("Canvas").transform, false);
         anim.Play("toy_in");
+        gameObject.GetComponent<ToyDifficulty>().Mod1Progression();
         yield return new WaitForSeconds(1);
 
         ResetToy();

@@ -5,8 +5,9 @@ using TMPro;
 
 public class ToyMod3 : MonoBehaviour
 {
-    private GameObject gameManager;
-    private GameMaster gameManagerScript;
+    [HideInInspector] public GameObject gameManager;
+    [HideInInspector] public GameMaster gameManagerScript;
+
     private char[] cColorID = { 'r', 'o', 'y', 'g', 'b', 'p' };
     private int[] nColorHash = { 0, 0, 0, 0, 0, 0 };
     private char[] cBubbleButtons = { 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x' };	// color value of bubble buttons

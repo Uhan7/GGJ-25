@@ -5,8 +5,8 @@ using TMPro;
 
 public class ToyMod5 : MonoBehaviour
 {
-    private GameObject gameManager;
-    private GameMaster gameManagerScript;
+    [HideInInspector] public GameObject gameManager;
+    [HideInInspector] public GameMaster gameManagerScript;
 
     private Animator anim;
 
@@ -25,6 +25,8 @@ public class ToyMod5 : MonoBehaviour
     [SerializeField] private bool[] buttonsToClick;
     public bool[] buttonsClicked;
 
+    public float blinkTime;
+
     [SerializeField] private int minLitButtons;
     [SerializeField] private int maxLitButtons;
 
@@ -38,7 +40,7 @@ public class ToyMod5 : MonoBehaviour
 
     private void Start()
     {
-        currentTimerMax += 0.25f;
+        currentTimerMax += 0.4f;
     }
 
     private void OnEnable()
@@ -131,7 +133,7 @@ public class ToyMod5 : MonoBehaviour
         {
             if (buttonsToClick[i] == true) bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().litSprite;
         }
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(blinkTime);
         for (int i = 0; i < 10; i++) bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().normalSprite;
     }
 
