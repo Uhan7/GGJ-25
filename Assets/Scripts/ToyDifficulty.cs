@@ -28,43 +28,38 @@ public class ToyDifficulty : MonoBehaviour
 
     }
 
-    public void Mod1Progression()
+    public void Mod3Progression()
     {
-        if (toyScript != null && toyScript.gameManagerScript.score >= 0 && toyScript.gameManagerScript.score <= 10)
+        if (toyScript != null && toyScript3.gameManagerScript.score >= 0 && toyScript3.gameManagerScript.score <= 10)
         {
-            toyScript.currentTimerMax = 2.5f;
-            toyScript.minLitButtons = 2;
-            toyScript.maxLitButtons = 4;
+            toyScript3.currentTimerMax = 2.5f;
+            toyScript3.nMaxColor = 2;
+
         }
-        if (toyScript != null && toyScript.gameManagerScript.score >= 11 && toyScript.gameManagerScript.score <= 20)
+        if (toyScript3 != null && toyScript3.gameManagerScript.score >= 11 && toyScript3.gameManagerScript.score <= 20)
         {
-            toyScript.currentTimerMax = 2.25f;
-            toyScript.minLitButtons = 2;
-            toyScript.maxLitButtons = 5;
+            toyScript3.currentTimerMax = 2.25f;
+            toyScript3.nMaxColor = 3;
         }
-        if (toyScript != null && toyScript.gameManagerScript.score >= 21 && toyScript.gameManagerScript.score <= 30)
+        if (toyScript3 != null && toyScript3.gameManagerScript.score >= 21 && toyScript3.gameManagerScript.score <= 30)
         {
-            toyScript.currentTimerMax = 2f;
-            toyScript.minLitButtons = 3;
-            toyScript.maxLitButtons = 5;
+            toyScript3.currentTimerMax = 2f;
+            toyScript3.nMaxColor = 4;
         }
-        if (toyScript != null && toyScript.gameManagerScript.score >= 31 && toyScript.gameManagerScript.score <= 40)
+        if (toyScript3 != null && toyScript3.gameManagerScript.score >= 31 && toyScript3.gameManagerScript.score <= 40)
         {
-            toyScript.currentTimerMax = 1.75f;
-            toyScript.minLitButtons = 3;
-            toyScript.maxLitButtons = 6;
+            toyScript3.currentTimerMax = 1.75f;
+            toyScript3.nMaxColor = 5;
         }
-        if (toyScript != null && toyScript.gameManagerScript.score >= 41 && toyScript.gameManagerScript.score <= 49)
+        if (toyScript3 != null && toyScript3.gameManagerScript.score >= 41 && toyScript3.gameManagerScript.score <= 49)
         {
-            toyScript.currentTimerMax = 1.5f;
-            toyScript.minLitButtons = 4;
-            toyScript.maxLitButtons = 6;
+            toyScript3.currentTimerMax = 1.5f;
+            toyScript3.nMaxColor = 6;
         }
-        if (toyScript != null && toyScript.gameManagerScript.score >= 50)
+        if (toyScript3 != null && toyScript3.gameManagerScript.score >= 50)
         {
-            toyScript.currentTimerMax = 1.2f;
-            toyScript.minLitButtons = 4;
-            toyScript.maxLitButtons = 6;
+            toyScript3.currentTimerMax = 1.2f;
+            toyScript3.nMaxColor = 6;
         }
     }
 }

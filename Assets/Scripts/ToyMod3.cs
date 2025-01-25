@@ -16,11 +16,11 @@ public class ToyMod3 : MonoBehaviour
     private int nTolerance = 1; // Checks if the number of collisions on the hash index is acceptable or can be hashed onto.
     private char cColorTarget = '?'; //Color that the player should clickity
     private bool found = false;
-    [SerializeField] private int nMaxColor;
+    [SerializeField] public int nMaxColor;
 
     private Animator anim;
 
-    [SerializeField] private float currentTimerMax;
+    [SerializeField] public float currentTimerMax;
     public float currentTimer;
     [SerializeField] private Image timerSprite;
     [SerializeField] private TextMeshProUGUI timerText;
@@ -35,8 +35,8 @@ public class ToyMod3 : MonoBehaviour
     [SerializeField] private bool[] buttonsToClick;
     public bool[] buttonsClicked;
 
-    [SerializeField] private int minLitButtons;
-    [SerializeField] private int maxLitButtons;
+    //[SerializeField] private int minLitButtons;
+    //[SerializeField] private int maxLitButtons;
 
     private void Awake()
     {
