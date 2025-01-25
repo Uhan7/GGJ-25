@@ -97,6 +97,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
+  r: 0
+  g: 0
+  b: 0
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
@@ -301,6 +304,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
+  r: 0
+  g: 0
+  b: 0
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
@@ -566,6 +572,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
+  r: 0
+  g: 0
+  b: 0
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
@@ -611,6 +620,7 @@ GameObject:
   - component: {fileID: 9060987203069791766}
   - component: {fileID: 5764745184742882335}
   - component: {fileID: 9006671289609208983}
+  - component: {fileID: 2096841547710448344}
   m_Layer: 0
   m_Name: Toy 3
   m_TagString: Toy
@@ -742,8 +752,18 @@ MonoBehaviour:
   - {fileID: 7554165001912870206}
   buttonsToClick: 00000000000000000000
   buttonsClicked: 00000000000000000000
-  minLitButtons: 7
-  maxLitButtons: 9
+--- !u!114 &2096841547710448344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3653978652972919029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adff8b640063148c6836ea334ac05f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3836488323879845035
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,6 +861,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
+  r: 0
+  g: 0
+  b: 0
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
@@ -970,6 +993,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
+  r: 0
+  g: 0
+  b: 0
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
@@ -1099,6 +1125,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
+  r: 0
+  g: 0
+  b: 0
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
@@ -1228,6 +1257,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
+  r: 0
+  g: 0
+  b: 0
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
@@ -1357,6 +1389,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
+  r: 0
+  g: 0
+  b: 0
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
@@ -1486,6 +1521,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
+  r: 0
+  g: 0
+  b: 0
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
@@ -1615,6 +1653,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
+  r: 0
+  g: 0
+  b: 0
   normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
   litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}

@@ -41,6 +41,7 @@ public class ToyMod5 : MonoBehaviour
     private void Start()
     {
         currentTimerMax += 0.4f;
+        gameObject.GetComponent<ToyDifficulty>().Mod5Progression();
     }
 
     private void OnEnable()

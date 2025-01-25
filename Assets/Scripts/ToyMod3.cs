@@ -48,7 +48,7 @@ public class ToyMod3 : MonoBehaviour
 
     private void Start()
     {
-
+        gameObject.GetComponent<ToyDifficulty>().Mod3Progression();
     }
 
     private void OnEnable()

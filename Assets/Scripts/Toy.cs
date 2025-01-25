@@ -38,7 +38,7 @@ public class Toy : MonoBehaviour
 
     private void Start()
     {
-
+        gameObject.GetComponent<ToyDifficulty>().Mod1Progression();
     }
 
     private void OnEnable()
@@ -128,7 +128,6 @@ public class Toy : MonoBehaviour
     {
         gameObject.transform.SetParent(GameObject.Find("Canvas").transform, false);
         anim.Play("toy_in");
-        gameObject.GetComponent<ToyDifficulty>().Mod1Progression();
         yield return new WaitForSeconds(1);
 
         ResetToy();

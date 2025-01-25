@@ -38,7 +38,7 @@ public class ToyMod2 : MonoBehaviour
 
     private void Start()
     {
-
+        gameObject.GetComponent<ToyDifficulty>().Mod2Progression();
     }
 
     private void OnEnable()
