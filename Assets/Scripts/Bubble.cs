@@ -24,6 +24,10 @@ public class Bubble : MonoBehaviour
     public bool isBomb;
     public Sprite bombSprite;
 
+    [SerializeField] public Sprite[] buttonColor;
+    public char colorID;
+    public Sprite[] indicators;
+
     private void Awake()
     {
         toyScript = toy.GetComponent<Toy>();
@@ -61,5 +65,34 @@ public class Bubble : MonoBehaviour
     public void Explode()
     {
         if (toyScript4 != null && isBomb) toyScript4.Compare();
+    }
+
+    public void setColor(char cColorID)
+    {
+        switch (cColorID)
+        {
+            case 'r':
+                // This sets this button's sprite to the red button
+                gameObject.GetComponent<Image>().sprite = buttonColor[0];
+                break;
+            case 'o':
+                gameObject.GetComponent<Image>().sprite = buttonColor[1];
+                break;
+            case 'y':
+                gameObject.GetComponent<Image>().sprite = buttonColor[2];
+                break;
+            case 'g':
+                gameObject.GetComponent<Image>().sprite = buttonColor[3];
+                break;
+            case 'b':
+                gameObject.GetComponent<Image>().sprite = buttonColor[4];
+                break;
+            case 'p':
+                gameObject.GetComponent<Image>().sprite = buttonColor[5];
+                break;
+            default:
+                gameObject.GetComponent<Image>().sprite = normalSprite;
+                break;
+        }
     }
 }

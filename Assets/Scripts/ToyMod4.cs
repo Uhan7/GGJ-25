@@ -106,7 +106,6 @@ public class ToyMod4 : MonoBehaviour
         for (int nBlocked = 0; nBlocked < nBlockedNum; nBlocked++)
         {
             blockedButtons[(nBlocked + nRandomNumber) % 10] = true;
-            Debug.Log((nBlocked + nRandomNumber) % 10);
             bubbles[(nBlocked + nRandomNumber) % 10].GetComponent<Bubble>().isBomb = true;
         }
 

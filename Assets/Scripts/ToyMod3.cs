@@ -10,13 +10,9 @@ public class ToyMod3 : MonoBehaviour
 
     private char[] cColorID = { 'r', 'o', 'y', 'g', 'b', 'p' };
     private int[] nColorHash = { 0, 0, 0, 0, 0, 0 };
-    private char[] cBubbleButtons = { 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x' };	// color value of bubble buttons
-    private int nRandomNum = -1; // random number
-    private int nChecker = -1; //Checks the value of the nBubble Button
+    public char[] cBubbleButtons = { 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x' };	// color value of bubble buttons
     private int nTolerance = 1; // Checks if the number of collisions on the hash index is acceptable or can be hashed onto.
     private char cColorTarget = '?'; //Color that the player should clickity
-    private bool found = false;
-    [SerializeField] public int nMaxColor;
 
     private Animator anim;
 
@@ -29,11 +25,17 @@ public class ToyMod3 : MonoBehaviour
     private bool compared;
     private bool ended;
 
+    private int nRandomNum = -1; // random number
+    private int nChecker = -1; //Checks the value of the nBubble Button
+    private bool found = false;
     [SerializeField] private TextMeshProUGUI resultText;
 
     [SerializeField] private GameObject[] bubbles;
     [SerializeField] private bool[] buttonsToClick;
     public bool[] buttonsClicked;
+
+
+    public GameObject[] indicators;
 
     //[SerializeField] private int minLitButtons;
     //[SerializeField] private int maxLitButtons;
@@ -121,7 +123,28 @@ public class ToyMod3 : MonoBehaviour
         nTolerance = 1; // Checks if the number of collisions on the hash index is acceptable or can be hashed onto.
         cColorTarget = cColorID[Random.Range(0,5+1)];
 
-        Debug.Log(cColorTarget);
+        switch (cColorTarget)
+        {
+            case 'r':
+                indicators[0].SetActive(true);
+                break;
+            case 'o':
+                indicators[1].SetActive(true);
+                break;
+            case 'y':
+                indicators[2].SetActive(true);
+                break;
+            case 'g':
+                indicators[3].SetActive(true);
+                break;
+            case 'b':
+                indicators[4].SetActive(true);
+                break;
+            case 'p':
+                indicators[5].SetActive(true);
+                break;
+        }
+
         for (int nBubButton = 0; nBubButton < 10; nBubButton++)
         {
             nRandomNum = Random.Range(0, 5+1);
@@ -134,6 +157,7 @@ public class ToyMod3 : MonoBehaviour
                     found = true;
                     nColorHash[nRandomNum]++;
                     cBubbleButtons[nBubButton] = cColorID[nRandomNum];
+                    bubbles[nBubButton].GetComponent<Bubble>().setColor(cBubbleButtons[nBubButton]);
                 }
                 else
                 {
@@ -145,7 +169,7 @@ public class ToyMod3 : MonoBehaviour
             {
                 nTolerance++;
             }
-            Debug.Log(cBubbleButtons[nBubButton].ToString() + nBubButton.ToString()+buttonsToClick[nBubButton].ToString());
+
         }
 
         //int litNum = Random.Range(minLitButtons, maxLitButtons + 1);
@@ -155,11 +179,6 @@ public class ToyMod3 : MonoBehaviour
             if (cBubbleButtons[i] == cColorTarget)
             {
                 buttonsToClick[i] = true;
-                bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().litSprite;
-            }
-            else
-            {
-                bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().normalSprite;
             }
 
         
