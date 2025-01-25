@@ -38,7 +38,7 @@ public class ToyMod4 : MonoBehaviour
 
     private void Start()
     {
-
+        currentTimerMax += 0.25f;
     }
 
     private void OnEnable()
@@ -114,10 +114,6 @@ public class ToyMod4 : MonoBehaviour
             {
                 lit++;
             }
-            else
-            {
-                bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().normalSprite;
-            }
         }
     }
 
@@ -126,12 +122,18 @@ public class ToyMod4 : MonoBehaviour
         gameObject.transform.SetParent(GameObject.Find("Canvas").transform, false);
         anim.Play("toy_in");
         yield return new WaitForSeconds(1);
-        for (int i = 0; i < 10; i++) bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().litSprite;
-        yield return new WaitForSeconds(.05f);
-        for (int i = 0; i < 10; i++) bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().normalSprite;
 
         ResetToy();
         SetButtonsToClick();
+
+        yield return new WaitForSeconds(Random.Range(0f, 0.5f));
+
+        for (int i = 0; i < 10; i++)
+        {
+            if (buttonsToClick[i] == true) bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().litSprite;
+        }
+        yield return new WaitForSeconds(.1f);
+        for (int i = 0; i < 10; i++) bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().normalSprite;
     }
 
     private IEnumerator slideOut()
