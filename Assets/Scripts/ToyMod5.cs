@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ToyMod4 : MonoBehaviour
+public class ToyMod5 : MonoBehaviour
 {
     private GameObject gameManager;
     private GameMaster gameManagerScript;

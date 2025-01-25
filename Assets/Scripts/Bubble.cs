@@ -13,8 +13,9 @@ public class Bubble : MonoBehaviour
 
     private Toy toyScript;
     private ToyMod2 toyScript2;
-
-    private ToyMod4 toyScript4;
+    //private ToyMod3 toyScript4;
+    //private ToyMod4 toyScript4;
+    private ToyMod5 toyScript5;
 
     public Sprite normalSprite;
     public Sprite litSprite;
@@ -24,8 +25,9 @@ public class Bubble : MonoBehaviour
     {
         toyScript = toy.GetComponent<Toy>();
         toyScript2 = toy.GetComponent<ToyMod2>();
-
-        toyScript4 = toy.GetComponent<ToyMod4>();
+        //toyScript3 = toy.GetComponent<ToyMod4>();
+        //toyScript4 = toy.GetComponent<ToyMod4>();
+        toyScript5 = toy.GetComponent<ToyMod5>();
     }
 
     void Start()
@@ -45,7 +47,8 @@ public class Bubble : MonoBehaviour
 
         if (toyScript != null) toyScript.buttonsClicked[ID] = true;
         if (toyScript2 != null) toyScript2.buttonsClicked[ID] = true;
-
-        if (toyScript4 != null) toyScript4.buttonsClicked[ID] = true;
+        //if (toyScript3 != null) toyScript3.buttonsClicked[ID] = true;
+        //if (toyScript4 != null) toyScript4.buttonsClicked[ID] = true;
+        if (toyScript5 != null) toyScript5.buttonsClicked[ID] = true;
     }
 }
