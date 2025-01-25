@@ -14,6 +14,7 @@ public class ToyMod3 : MonoBehaviour
     private int nChecker = -1; //Checks the value of the nBubble Button
     private int nTolerance = 1; // Checks if the number of collisions on the hash index is acceptable or can be hashed onto.
     private char cColorTarget = '?'; //Color that the player should clickity
+    bool found = false;
 
     private Animator anim;
 
@@ -111,18 +112,23 @@ public class ToyMod3 : MonoBehaviour
         Debug.Log(cColorTarget);
         for (int nBubButton = 0; nBubButton < 10; nBubButton++)
         {
-            nRandomNum = Random.Range(0, 5+1);
-            if (nColorHash[nRandomNum] < nTolerance)
+            nRandomNum = Random.Range(0, 5 + 1);
+            found = false;
+
+            while (found == false)
             {
-                nColorHash[nRandomNum]++;
-                cBubbleButtons[nBubButton] = cColorID[nRandomNum];
-                
+                if (nColorHash[nRandomNum] < nTolerance)
+                {
+                    found = true;
+                    nColorHash[nRandomNum]++;
+                    cBubbleButtons[nBubButton] = cColorID[nRandomNum];
+                }
+                else
+                {
+                    nRandomNum = ((nRandomNum + 1) % 6);
+                }
             }
-            else
-            {
-                cBubbleButtons[nBubButton] = cColorTarget;
-            }
-            
+
             if (nBubButton % 6 == (6 - 1))
             {
                 nTolerance++;
