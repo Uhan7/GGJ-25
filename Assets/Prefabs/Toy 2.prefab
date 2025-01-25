@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
+  m_Sprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 2
   popSFXs:
@@ -97,12 +98,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
-  r: 0
-  g: 0
-  b: 0
-  normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
-  litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  normalSprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
+  litSprite: {fileID: -9154087108956894445, guid: e28cfe511e3c342e692924a86e5564b2, type: 3}
+  clickedSprite: {fileID: -120979808241377635, guid: 4e26d74a7057f4e9ca5c3a084cd15b5b, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: 0}
 --- !u!114 &135869548357551461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
+  m_Sprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -297,6 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 2
   popSFXs:
@@ -304,12 +305,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
-  r: 0
-  g: 0
-  b: 0
-  normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
-  litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  normalSprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
+  litSprite: {fileID: -9154087108956894445, guid: e28cfe511e3c342e692924a86e5564b2, type: 3}
+  clickedSprite: {fileID: -120979808241377635, guid: 4e26d74a7057f4e9ca5c3a084cd15b5b, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: 0}
 --- !u!114 &9178956479825348003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
+  m_Sprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -565,6 +565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 2
   popSFXs:
@@ -572,12 +573,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
-  r: 0
-  g: 0
-  b: 0
-  normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
-  litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  normalSprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
+  litSprite: {fileID: -9154087108956894445, guid: e28cfe511e3c342e692924a86e5564b2, type: 3}
+  clickedSprite: {fileID: -120979808241377635, guid: 4e26d74a7057f4e9ca5c3a084cd15b5b, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: 0}
 --- !u!114 &4083632767359143095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,7 +657,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 700}
+  m_SizeDelta: {x: 741, y: 645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3907122869451180100
 CanvasRenderer:
@@ -680,14 +680,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8691588, g: 0.2688679, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
+  m_Sprite: {fileID: 2817888600118603647, guid: f32ee0a181b394a4c87c8b3ed576083c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -832,7 +832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
+  m_Sprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -855,6 +855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 2
   popSFXs:
@@ -862,12 +863,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
-  r: 0
-  g: 0
-  b: 0
-  normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
-  litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  normalSprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
+  litSprite: {fileID: -9154087108956894445, guid: e28cfe511e3c342e692924a86e5564b2, type: 3}
+  clickedSprite: {fileID: -120979808241377635, guid: 4e26d74a7057f4e9ca5c3a084cd15b5b, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: 0}
 --- !u!114 &1374438070639107518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -964,7 +964,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
+  m_Sprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -987,6 +987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 2
   popSFXs:
@@ -994,12 +995,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
-  r: 0
-  g: 0
-  b: 0
-  normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
-  litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  normalSprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
+  litSprite: {fileID: -9154087108956894445, guid: e28cfe511e3c342e692924a86e5564b2, type: 3}
+  clickedSprite: {fileID: -120979808241377635, guid: 4e26d74a7057f4e9ca5c3a084cd15b5b, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: 0}
 --- !u!114 &1950135781918409930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1096,7 +1096,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
+  m_Sprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1119,6 +1119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 2
   popSFXs:
@@ -1126,12 +1127,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
-  r: 0
-  g: 0
-  b: 0
-  normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
-  litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  normalSprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
+  litSprite: {fileID: -9154087108956894445, guid: e28cfe511e3c342e692924a86e5564b2, type: 3}
+  clickedSprite: {fileID: -120979808241377635, guid: 4e26d74a7057f4e9ca5c3a084cd15b5b, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: 0}
 --- !u!114 &3700429009488459397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1228,7 +1228,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
+  m_Sprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1251,6 +1251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 2
   popSFXs:
@@ -1258,12 +1259,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
-  r: 0
-  g: 0
-  b: 0
-  normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
-  litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  normalSprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
+  litSprite: {fileID: -9154087108956894445, guid: e28cfe511e3c342e692924a86e5564b2, type: 3}
+  clickedSprite: {fileID: -120979808241377635, guid: 4e26d74a7057f4e9ca5c3a084cd15b5b, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: 0}
 --- !u!114 &3048464509611458741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1360,7 +1360,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
+  m_Sprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1383,6 +1383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 2
   popSFXs:
@@ -1390,12 +1391,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
-  r: 0
-  g: 0
-  b: 0
-  normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
-  litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  normalSprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
+  litSprite: {fileID: -9154087108956894445, guid: e28cfe511e3c342e692924a86e5564b2, type: 3}
+  clickedSprite: {fileID: -120979808241377635, guid: 4e26d74a7057f4e9ca5c3a084cd15b5b, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: 0}
 --- !u!114 &4202966269439171840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1492,7 +1492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
+  m_Sprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1515,6 +1515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 2
   popSFXs:
@@ -1522,12 +1523,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
-  r: 0
-  g: 0
-  b: 0
-  normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
-  litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  normalSprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
+  litSprite: {fileID: -9154087108956894445, guid: e28cfe511e3c342e692924a86e5564b2, type: 3}
+  clickedSprite: {fileID: -120979808241377635, guid: 4e26d74a7057f4e9ca5c3a084cd15b5b, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: 0}
 --- !u!114 &135122229184336010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1624,7 +1624,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
+  m_Sprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1647,6 +1647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSource: {fileID: 0}
+  bubble: {fileID: 0}
   toy: {fileID: 3653978652972919029}
   toyMod: 2
   popSFXs:
@@ -1654,12 +1655,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f832ef997d79e4e67b9f70aef99902bc, type: 3}
   - {fileID: 8300000, guid: b9ce31442cd804bc692512ec8e60592f, type: 3}
   - {fileID: 8300000, guid: 9b1c76897b3c84af6be07c034c29726e, type: 3}
-  r: 0
-  g: 0
-  b: 0
-  normalSprite: {fileID: -2413806693520163455, guid: 2b951419db7a50a4c9327527e71b2cfa, type: 3}
-  litSprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  clickedSprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  normalSprite: {fileID: -1547409833374362750, guid: 3182185323aa74e07892d5c7d4a48b16, type: 3}
+  litSprite: {fileID: -9154087108956894445, guid: e28cfe511e3c342e692924a86e5564b2, type: 3}
+  clickedSprite: {fileID: -120979808241377635, guid: 4e26d74a7057f4e9ca5c3a084cd15b5b, type: 3}
+  isBomb: 0
+  bombSprite: {fileID: 0}
 --- !u!114 &4587995468515310177
 MonoBehaviour:
   m_ObjectHideFlags: 0
