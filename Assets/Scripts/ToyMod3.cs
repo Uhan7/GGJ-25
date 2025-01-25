@@ -3,10 +3,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Toy : MonoBehaviour
+public class ToyMod3 : MonoBehaviour
 {
     private GameObject gameManager;
     private GameMaster gameManagerScript;
+    private char[] cColorID = { 'r', 'o', 'y', 'g', 'b', 'p' };
+    private int[] nColorHash = { 0, 0, 0, 0, 0, 0 };
+    private char[] cBubbleButtons = { 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x' };	// color value of bubble buttons
+    private int nRandomNum = -1; // random number
+    private int nChecker = -1; //Checks the value of the nBubble Button
+    private int nTolerance = 1; // Checks if the number of collisions on the hash index is acceptable or can be hashed onto.
+    private char cColorTarget = '?'; //Color that the player should clickity
 
     private Animator anim;
 
@@ -96,30 +103,51 @@ public class Toy : MonoBehaviour
 
     void SetButtonsToClick()
     {
-        int litNum = Random.Range(minLitButtons, maxLitButtons+1);
-        int lit = 0;
+        nRandomNum = -1; // random number
+        nChecker = -1; //Checks the value of the nBubble Button
+        nTolerance = 1; // Checks if the number of collisions on the hash index is acceptable or can be hashed onto.
+        cColorTarget = cColorID[Random.Range(0,5+1)];
+
+        Debug.Log(cColorTarget);
+        for (int nBubButton = 0; nBubButton < 10; nBubButton++)
+        {
+            nRandomNum = Random.Range(0, 5+1);
+            if (nColorHash[nRandomNum] < nTolerance)
+            {
+                nColorHash[nRandomNum]++;
+                cBubbleButtons[nBubButton] = cColorID[nRandomNum];
+                
+            }
+            else
+            {
+                cBubbleButtons[nBubButton] = cColorTarget;
+            }
+            
+            if (nBubButton % 6 == (6 - 1))
+            {
+                nTolerance++;
+            }
+            Debug.Log(cBubbleButtons[nBubButton].ToString() + nBubButton.ToString()+buttonsToClick[nBubButton].ToString());
+        }
+
+        //int litNum = Random.Range(minLitButtons, maxLitButtons + 1);
 
         for (int i = 0; i < 10; i++)
         {
-            bool newLight = Random.value >= 0.5f;
-
-            if (lit < litNum) buttonsToClick[i] = newLight;
-            else
+            Debug.Log(cBubbleButtons[i] == cColorTarget);
+            if (cBubbleButtons[i] == cColorTarget)
             {
-                buttonsToClick[i] = false;
-                break;
-            }
-
-            if (newLight == true)
-            {
+                buttonsToClick[i] = true;
                 bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().litSprite;
-                lit++;
             }
             else
             {
                 bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().normalSprite;
             }
+
+        
         }
+
     }
 
     private IEnumerator slideIn()
