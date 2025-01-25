@@ -1,16 +1,24 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Bubble : MonoBehaviour
 {
 
     private int ID;
-    private GameObject Toy;
+    [SerializeField] private GameObject toy;
+    [SerializeField] private int toyMod;
+
     private Toy toyScript;
+    private ToyMod2 toyScript2;
+
+    public Sprite normalSprite;
+    public Sprite litSprite;
+    public Sprite clickedSprite;
 
     private void Awake()
     {
-        Toy = GameObject.Find("Toy");
-        toyScript = Toy.GetComponent<Toy>();
+        toyScript = toy.GetComponent<Toy>();
+        toyScript2 = toy.GetComponent<ToyMod2>();
     }
 
     void Start()
@@ -23,8 +31,11 @@ public class Bubble : MonoBehaviour
         
     }
 
-    void Clicked()
+    public void Clicked()
     {
-        toyScript.buttonsClicked[ID] = true;
+        gameObject.GetComponent<Image>().sprite = clickedSprite;
+
+        if (toyScript != null) toyScript.buttonsClicked[ID] = true;
+        if (toyScript2 != null) toyScript2.buttonsClicked[ID] = true;
     }
 }

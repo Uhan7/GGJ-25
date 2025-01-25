@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Toy : MonoBehaviour
+public class ToyMod2 : MonoBehaviour
 {
     private GameObject gameManager;
     private GameMaster gameManagerScript;
@@ -90,16 +90,16 @@ public class Toy : MonoBehaviour
         {
             buttonsToClick[i] = false;
             buttonsClicked[i] = false;
-            bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().normalSprite;
+            bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().litSprite;
         }
     }
 
     void SetButtonsToClick()
     {
-        int litNum = Random.Range(minLitButtons, maxLitButtons+1);
+        int litNum = Random.Range(minLitButtons, maxLitButtons + 1);
         int lit = 0;
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 9; i >= 0; i--)
         {
             bool newLight = Random.value >= 0.5f;
 
@@ -112,12 +112,12 @@ public class Toy : MonoBehaviour
 
             if (newLight == true)
             {
-                bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().litSprite;
+                bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().normalSprite;
                 lit++;
             }
             else
             {
-                bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().normalSprite;
+                bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().litSprite;
             }
         }
     }
