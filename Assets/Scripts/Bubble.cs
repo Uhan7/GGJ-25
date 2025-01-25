@@ -3,10 +3,13 @@ using UnityEngine.UI;
 
 public class Bubble : MonoBehaviour
 {
+    [SerializeField] private AudioSource aSource;
 
     private int ID;
     [SerializeField] private GameObject toy;
     [SerializeField] private int toyMod;
+
+    [SerializeField] private AudioClip popSFX;
 
     private Toy toyScript;
     private ToyMod2 toyScript2;
@@ -33,6 +36,7 @@ public class Bubble : MonoBehaviour
 
     public void Clicked()
     {
+
         gameObject.GetComponent<Image>().sprite = clickedSprite;
 
         if (toyScript != null) toyScript.buttonsClicked[ID] = true;
