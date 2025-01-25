@@ -98,28 +98,30 @@ public class ToyMod2 : MonoBehaviour
     {
         int litNum = Random.Range(minLitButtons, maxLitButtons + 1);
         int lit = 0;
+        bool newLight;
 
-        for (int i = 9; i >= 0; i--)
+        for (int i = 0; i < 10 && lit < litNum; i++)
         {
-            bool newLight = Random.value >= 0.5f;
 
-            if (lit < litNum) buttonsToClick[i] = newLight;
-            else
+            if (lit < litNum && buttonsToClick[i] == false)
             {
-                buttonsToClick[i] = false;
-                break;
+                newLight = Random.value >= 0.5f;
+                buttonsToClick[i] = newLight;
+
+                if (newLight == true)
+                {
+                    bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().normalSprite;
+                    lit++;
+                }
+                else
+                {
+                    bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().litSprite;
+                }
             }
 
-            if (newLight == true)
-            {
-                bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().normalSprite;
-                lit++;
-            }
-            else
-            {
-                bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().litSprite;
-            }
+            if (i == 9 && lit != litNum) i = 0;
         }
+
     }
 
     private IEnumerator slideIn()

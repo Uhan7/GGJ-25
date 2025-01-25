@@ -98,23 +98,22 @@ public class ToyMod5 : MonoBehaviour
     {
         int litNum = Random.Range(minLitButtons, maxLitButtons + 1);
         int lit = 0;
+        bool newLight;
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 10 && lit < litNum; i++)
         {
-            bool newLight = Random.value >= 0.5f;
 
-            if (lit < litNum) buttonsToClick[i] = newLight;
-            else
+            if (lit < litNum && buttonsToClick[i] == false)
             {
-                buttonsToClick[i] = false;
-                break;
+                newLight = Random.value >= 0.5f;
+                buttonsToClick[i] = newLight;
+
+                if (newLight == true) lit++;
             }
 
-            if (newLight == true)
-            {
-                lit++;
-            }
+            if (i == 9 && lit != litNum) i = 0;
         }
+
     }
 
     private IEnumerator slideIn()

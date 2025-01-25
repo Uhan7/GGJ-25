@@ -9,7 +9,7 @@ public class Bubble : MonoBehaviour
     [SerializeField] private GameObject toy;
     [SerializeField] private int toyMod;
 
-    [SerializeField] private AudioClip popSFX;
+    [SerializeField] private AudioClip[] popSFXs;
 
     private Toy toyScript;
     private ToyMod2 toyScript2;
@@ -28,6 +28,8 @@ public class Bubble : MonoBehaviour
         toyScript3 = toy.GetComponent<ToyMod3>();
         //toyScript4 = toy.GetComponent<ToyMod4>();
         toyScript5 = toy.GetComponent<ToyMod5>();
+
+        aSource = GameObject.Find("SFX Source").GetComponent<AudioSource>();
     }
 
     void Start()
@@ -42,8 +44,9 @@ public class Bubble : MonoBehaviour
 
     public void Clicked()
     {
-
+        aSource.pitch = 1 + Random.Range(-0.3f, 0.3f);
         gameObject.GetComponent<Image>().sprite = clickedSprite;
+        aSource.PlayOneShot(popSFXs[Random.Range(0, popSFXs.Length)]);
 
         if (toyScript != null) toyScript.buttonsClicked[ID] = true;
         if (toyScript2 != null) toyScript2.buttonsClicked[ID] = true;
