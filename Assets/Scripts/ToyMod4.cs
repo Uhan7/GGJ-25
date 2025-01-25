@@ -30,6 +30,7 @@ public class ToyMod4 : MonoBehaviour
 
     public int minBlockedButtons;
     public int maxBlockedButtons;
+    [SerializeField] private bool[] blockedButtons;
 
     private void Awake()
     {
@@ -93,20 +94,26 @@ public class ToyMod4 : MonoBehaviour
         {
             buttonsToClick[i] = false;
             buttonsClicked[i] = false;
+            blockedButtons[i] = false;
             bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().normalSprite;
         }
     }
 
     void SetButtonsToClick()
     {
+        int nBlockedNum = Random.Range(minBlockedButtons, maxBlockedButtons + 1);
+        for (int nBlocked = 0; nBlocked < nBlockedNum; nBlocked++)
+        {
+            blockedButtons[(nBlocked * 3) % 10] = true;
+        }
+
         int litNum = Random.Range(minLitButtons, maxLitButtons + 1);
         int lit = 0;
         bool newLight;
 
         for (int i = 0; i < 10 && lit < litNum; i++)
         {
-
-            if (lit < litNum && buttonsToClick[i] == false)
+            if (lit < litNum && buttonsToClick[i] == false && blockedButtons[i] == false)
             {
                 newLight = Random.value >= 0.5f;
                 buttonsToClick[i] = newLight;
@@ -121,8 +128,6 @@ public class ToyMod4 : MonoBehaviour
                     bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().normalSprite;
                 }
             }
-
-            if (i == 9 && lit != litNum) i = 0;
         }
 
     }
@@ -131,7 +136,7 @@ public class ToyMod4 : MonoBehaviour
     {
         gameObject.transform.SetParent(GameObject.Find("Canvas").transform, false);
         anim.Play("toy_in");
-        //gameObject.GetComponent<ToyDifficulty>().Mod1Progression();
+        //gameObject.GetComponent<ToyDifficulty>().Mod4Progression();
         yield return new WaitForSeconds(1);
 
         ResetToy();
@@ -180,3 +185,4 @@ public class ToyMod4 : MonoBehaviour
         return true;
     }
 }
+
