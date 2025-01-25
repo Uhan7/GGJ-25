@@ -1227,19 +1227,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2786517927113168330, guid: 3f72b60257ac4422b8cdccdc96610f3f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2786517927113168330, guid: 3f72b60257ac4422b8cdccdc96610f3f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2786517927113168330, guid: 3f72b60257ac4422b8cdccdc96610f3f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2786517927113168330, guid: 3f72b60257ac4422b8cdccdc96610f3f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 794
       objectReference: {fileID: 0}
     - target: {fileID: 2786517927113168330, guid: 3f72b60257ac4422b8cdccdc96610f3f, type: 3}
       propertyPath: m_AnchoredPosition.y
