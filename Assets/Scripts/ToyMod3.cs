@@ -15,7 +15,8 @@ public class ToyMod3 : MonoBehaviour
     private int nChecker = -1; //Checks the value of the nBubble Button
     private int nTolerance = 1; // Checks if the number of collisions on the hash index is acceptable or can be hashed onto.
     private char cColorTarget = '?'; //Color that the player should clickity
-    bool found = false;
+    private bool found = false;
+    [SerializeField] private int nMaxColor;
 
     private Animator anim;
 
@@ -113,7 +114,7 @@ public class ToyMod3 : MonoBehaviour
         Debug.Log(cColorTarget);
         for (int nBubButton = 0; nBubButton < 10; nBubButton++)
         {
-            nRandomNum = Random.Range(0, 5 + 1);
+            nRandomNum = Random.Range(0, nMaxColor+1);
             found = false;
 
             while (found == false)
