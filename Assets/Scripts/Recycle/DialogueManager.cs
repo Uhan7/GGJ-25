@@ -38,16 +38,17 @@ public class DialogueManager : MonoBehaviour
     private void Update()
     {
 		anim.SetBool("Open", open);
-		if (Input.GetKeyDown(KeyCode.Space))
-			{
-			skip = true;
-			if (canNext)
-			{
-				canNext = false;
-				nextIndicator.SetActive(false);
-				skip = false;
-				DisplayNextSentence();
-			}
+	}
+
+	public void ContinueDialogue()
+    {
+		skip = true;
+		if (canNext)
+		{
+			canNext = false;
+			nextIndicator.SetActive(false);
+			skip = false;
+			DisplayNextSentence();
 		}
 	}
 
