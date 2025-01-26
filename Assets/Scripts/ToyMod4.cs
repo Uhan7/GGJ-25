@@ -135,6 +135,7 @@ public class ToyMod4 : MonoBehaviour
                 {
                     bubbles[i].GetComponent<Image>().sprite = bubbles[i].GetComponent<Bubble>().normalSprite;
                 }
+                if (i == 9 && lit != litNum) i = 0;
             }
         }
 
