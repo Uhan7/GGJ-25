@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 676032cc3bc154e549d25609a271141d
+guid: eaf2f96debab542b5938f7300d4e9f3d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3331984131114305898
-    second: background blurred_0
+      213: -6579689056530557529
+    second: Tutorial Screen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background blurred_0
+      name: Tutorial Screen_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1600
-        height: 900
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69671bb161a62c1d0800000000000000
-      internalID: -3331984131114305898
+      spriteID: 7a598fce9af30b4a0800000000000000
+      internalID: -6579689056530557529
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      background blurred_0: -3331984131114305898
+      Tutorial Screen_0: -6579689056530557529
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

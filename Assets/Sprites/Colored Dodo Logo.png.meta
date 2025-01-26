@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Colored Dodo Logo_0: -8226045191027877227
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

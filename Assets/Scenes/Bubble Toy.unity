@@ -500,10 +500,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1600, y: 900}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -608,7 +608,8 @@ MonoBehaviour:
     name: Toy Seller :)
     soundToPlay: {fileID: 8300000, guid: be007c1ab88964876872c65e057f57a9, type: 3}
     sentences:
-    - placeholder shi
+    - WOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! I DIDN'T KNOW YOU'D GET
+      THIS FAR!!!!!
   onAwake: 1
   isTrigger: 0
   sign: 0
@@ -1097,7 +1098,7 @@ MonoBehaviour:
     name: Toy Seller :)
     soundToPlay: {fileID: 8300000, guid: be007c1ab88964876872c65e057f57a9, type: 3}
     sentences:
-    - placeholder shi
+    - OMGFGFGFASDE!!!!! You're REALLY POPPING OFF!!!!!
   onAwake: 1
   isTrigger: 0
   sign: 0
@@ -1536,6 +1537,7 @@ GameObject:
   - component: {fileID: 996585078}
   - component: {fileID: 996585077}
   - component: {fileID: 996585080}
+  - component: {fileID: 996585081}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1661,6 +1663,20 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &996585081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996585076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e95fd65b339724a128c69164567eb8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: 1cc1e19b192bf48deb6e67722c5040c5, type: 3}
+  clickCursor: {fileID: 2800000, guid: 248e9988a3de4452ba34c9bb78fd099e, type: 3}
 --- !u!1 &1034552265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,7 +1834,7 @@ MonoBehaviour:
     - 'Distraction!!!
 
 
-      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!!!'
+      YEEEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHH!!!'
   onAwake: 1
   isTrigger: 0
   sign: 0
@@ -2449,7 +2465,7 @@ MonoBehaviour:
     name: Toy Seller :)
     soundToPlay: {fileID: 8300000, guid: be007c1ab88964876872c65e057f57a9, type: 3}
     sentences:
-    - placeholder shi
+    - Holy... HOLY... HOLY!!!! OHHH you're really CRAZY, kid!!!!
   onAwake: 1
   isTrigger: 0
   sign: 0

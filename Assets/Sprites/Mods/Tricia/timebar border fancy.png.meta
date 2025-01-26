@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      timebar border fancy_0: -7602425437675142826
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
