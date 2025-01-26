@@ -7,6 +7,7 @@ public class ToyMod2 : MonoBehaviour
 {
     [SerializeField] private bool isIntro;
     [SerializeField] private AudioClip scoreSFX;
+    [SerializeField] private AudioClip buzzerSFX;
 
     [HideInInspector] public GameObject gameManager;
     [HideInInspector] public GameMaster gameManagerScript;
@@ -164,6 +165,9 @@ public class ToyMod2 : MonoBehaviour
             if (buttonsToClick[i] != buttonsClicked[i])
             {
                 //resultText.text = "Wrong!";
+                GameObject.Find("SFX Source").GetComponent<AudioSource>().pitch = 1;
+                GameObject.Find("SFX Source").GetComponent<AudioSource>().volume = 0.7f;
+                GameObject.Find("SFX Source").GetComponent<AudioSource>().PlayOneShot(buzzerSFX);
                 gameManagerScript.LoseGame();
                 return false;
             }
